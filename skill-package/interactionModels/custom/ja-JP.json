@@ -1,0 +1,56 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "やまびこだま",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "下山したい",
+            "下山する",
+            "下山します",
+            "下山して",
+            "下山"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "YamabikoIntent",
+          "slots": [
+            {
+              "name": "yamabiko",
+              "type": "yamabiko_list"
+            }
+          ],
+          "samples": [
+            "{yamabiko} "
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "あいうえお"
+              }
+            }
+          ],
+          "name": "yamabiko_list"
+        }
+      ]
+    }
+  },
+  "version": "2"
+}
