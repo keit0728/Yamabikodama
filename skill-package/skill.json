@@ -1,5 +1,38 @@
 {
   "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "ja-JP": {
+          "summary": "話しかけた言葉を復唱してくれます。山頂に来たつもりで叫んで下さい。ビバリモート登山。",
+          "examplePhrases": [
+            "アレクサ、やまびこだまを開いて",
+            "やっほー",
+            "ヘルプ"
+          ],
+          "keywords": [
+            "やまびこ",
+            "こだま",
+            "山",
+            "登山",
+            "下山",
+            "復唱"
+          ],
+          "name": "やまびこだま",
+          "description": "話しかけた言葉を復唱します。\n\n\n「アレクサ、やまびこだまを開いて」で開始。\n\n以降は話しかけた言葉を復唱してくれます。\n\n終了したい場合は「下山したい」と話しかけて下さい。\n\n\nそれでは叫んでみて下さい！山頂に来た気持ちになれます。ビバリモート登山。",
+          "smallIconUri": "file://assets/images/ja-JP_smallIconUri.png",
+          "largeIconUri": "file://assets/images/ja-JP_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Alexaが話しかけられた言葉を復唱してくれます。\n\n\nスキル開始：「アレクサ、やまびこだまを開いて」\n\nスキル開始後にAlexaに話しかけた言葉を復唱し続けるか確認お願いします。\n\nスキル終了：「アレクサ、下山して」\n\n\n審査、よろしくお願いいたします。",
+      "category": "NOVELTY",
+      "distributionCountries": [
+        "JP"
+      ]
+    },
     "apis": {
       "custom": {
         "endpoint": {
@@ -7,14 +40,14 @@
         },
         "interfaces": [],
         "regions": {
-          "NA": {
-            "endpoint": {
-              "uri": "arn:aws:lambda:us-east-1:467289863567:function:e0df995b-852a-4bad-aac1-c77f6bbf25c0:Release_0"
-            }
-          },
           "EU": {
             "endpoint": {
               "uri": "arn:aws:lambda:eu-west-1:467289863567:function:e0df995b-852a-4bad-aac1-c77f6bbf25c0:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:467289863567:function:e0df995b-852a-4bad-aac1-c77f6bbf25c0:Release_0"
             }
           },
           "FE": {
@@ -26,24 +59,15 @@
       }
     },
     "manifestVersion": "1.0",
-    "publishingInformation": {
-      "category": "KNOWLEDGE_AND_TRIVIA",
-      "distributionCountries": [],
-      "isAvailableWorldwide": true,
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
       "locales": {
-        "ja-JP": {
-          "description": "Sample Full Description",
-          "examplePhrases": [
-            "Alexa open hello world",
-            "hello",
-            "help"
-          ],
-          "keywords": [],
-          "name": "やまびこだま",
-          "summary": "Sample Short Description"
-        }
+        "ja-JP": {}
       },
-      "testingInstructions": "Sample Testing Instructions."
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
     }
   }
 }

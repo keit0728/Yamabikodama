@@ -50,7 +50,7 @@ const HelpIntentHandler = {
     },
     // 処理する内容
     handle(handlerInput) {
-        const speakOutput = 'やまびここだまは、あなたが話しかけたことを私に復唱させるスキルです。スキルを終了したい場合は下山したいと話しかけて下さい。それでは山頂に来た気持ちになって叫んで下さい！';
+        const speakOutput = 'やまびここだまは、あなたが話しかけたことを復唱するスキルです。スキルを終了したい場合は下山したいと話しかけて下さい。それでは山頂に来た気持ちになって叫んで下さい！';
 
         return handlerInput.responseBuilder
             .speak(speakOutput) // Alexaが話す
